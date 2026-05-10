@@ -1,4 +1,5 @@
-#include<iostream>
+ // map sorts keys not values 
+ #include<iostream>
 #include<map>
 #include<string>
 #include<vector>
@@ -20,4 +21,3 @@ return 0;
 
 }
 
-// map sorts keys not values
