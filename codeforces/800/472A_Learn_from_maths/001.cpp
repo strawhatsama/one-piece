@@ -1,23 +1,41 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 void solve()
-{  int n;
-   cin>>n;
+{
 
-   if(n%2==0)
-   {cout<<n/2<<"\n";
-     cout<<n/2<<"\n";
-   }
-   else
-   { cout<<3<<"\n";
-    cout<<n-3<<"\n";
-   }
+  int a, b, c, d;
+  cin >> a >> b >> c >> d;
+  // solution 1
 
+  if ((a == b) && (b == c) && (c == d))
+  {
+
+    cout << 3;
+  }
+
+  else if (((a == b) && (b == c)) || ((b == c) && (c == d)) || ((a == c) && (c == d)))
+  {
+
+    cout << 2;
+  }
+
+  else if ((a == b) || (b == c) || (c == d))
+  {
+
+    cout << 1;
+  }
+
+  else if ((a != b) && (b != c) && (c != d))
+  {
+    cout << 0;
+  }
 }
-
 int main()
-{ solve();
-    return 0;
+{
 
+  solve();
+  return 0;
 }
+
+// stupid way
