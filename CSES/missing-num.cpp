@@ -31,7 +31,7 @@ void solve() {
 
         if(v[j]!=(j+1)) {
 
-            cout<<(j+1);
+            cout<<(j+1)+1;
             break;
         }
 

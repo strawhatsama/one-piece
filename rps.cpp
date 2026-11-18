@@ -18,7 +18,7 @@ void solve() {
         }
         else 
         {
-            cout<<(k+(b-a))<<"\n";
+            cout<<(k+(b-a)/2)<<"\n";
 
         }
     }
